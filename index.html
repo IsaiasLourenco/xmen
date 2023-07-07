@@ -8,18 +8,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+    
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
 </head>
 
 <body>
-    <header class="cabecalho"></header>
+    <header class="cabecalho">
+        <img class="logo" src="./src/imagens/logo.svg" alt="">
+    </header>
 
     <main class="selecao-de-personagens">
+
         <section class="personagens">
-            <h1 class="titulo"><img src="./src/imagens/logo.svg" alt="Logotipo"></h1>
-            <h1 class="titulo" style="font-family: Oxanium"> Selecione um personagem </h1>
+
+            <h1 class="titulo"> Selecione um personagem </h1>
+
             <ul class="lista-de-personagens">
 
-                <li class="personagem" id="ciclope">
+                <li class="personagem selecionado" id="ciclope">
                     <img src="./src/imagens/card-ciclope.jpg" alt="Personagem → Ciclope">
                 </li>
 
@@ -52,17 +62,22 @@
                 </li>
 
             </ul>
+
         </section>
+
         <section class="personagem-selecionado">
+
             <img class="personagem-grande" src="./src/imagens/card-ciclope.png" alt="Personagem Selecionado">
+
             <div class="informacoes-personagem">
-                <h2 class="nome-personagem" id="nome-personagem" style="font-family: Oxanium">Ciclope</h2>
-                <p class="descricao-personagem" style="font-family: Oxanium"></p>
-                <p class="descricao-personagem" id="descricao-personagem" style="font-family: Oxanium">Ele tem o poder de disparar rajadas ópticas
-                    por causa de um acidente que aconteceu com ele quando criança, mas não consegue controlá-los.</p>
+                <h2 class="nome-personagem" id="nome-personagem">Ciclope</h2>
+                <p class="descricao-personagem" id="descricao-personagem">Ele tem o poder de disparar rajadas ópticas por causa de um acidente que aconteceu com ele quando criança, mas não consegue controlá-los.</p>
             </div>
+
         </section>
+
     </main>
+
 </body>
 
 </html>
