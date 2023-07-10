@@ -20,6 +20,10 @@
     .selecao-de-personagens .lista-de-personagens{
         gap: 9px;
     }
+    
+    .selecao-de-personagens .lista-de-personagens2{
+        gap: 9px;
+    }
 
     .selecao-de-personagens .personagem img{
         width: 80px;
