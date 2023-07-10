@@ -29,8 +29,19 @@ personagens.forEach((personagem) => {
         alterarNomePersonagem(personagem);
 
         alterarDescricaoPersonagem(personagem);
+
+    });
+    personagem.addEventListener('click', () =>{
+        trocarLista();
     });
 });
+
+function trocarLista() {
+    const lista1 = document.getElementById("lista-de-personagens");
+    const lista2 = document.getElementById("lista-de-personagens2");
+    lista1.style.display = "none";
+    lista2.style.display = "flex";
+}
 
 function alterarDescricaoPersonagem(personagem) {
     const descricaoPersonagem = document.getElementById('descricao-personagem');

@@ -32,10 +32,32 @@ body::before{
 }
 
 .selecao-de-personagens .lista-de-personagens{
-    display: flex;
+    
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
+}
+
+.selecao-de-personagens .lista-de-personagens button{
+    background-color: black;
+    color: white;
+    width: 25px;
+    height: 25px;
+    box-shadow: 0px 0px 24px 5px #0271f7;
+}
+.selecao-de-personagens .lista-de-personagens2{
+    
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.selecao-de-personagens .lista-de-personagens2 button{
+    background-color: black;
+    color: white;
+    width: 25px;
+    height: 25px;
+    box-shadow: 0px 0px 24px 5px #0271f7;
 }
 
 .selecao-de-personagens .personagens{
@@ -63,6 +85,10 @@ body::before{
 }
 
 .lista-de-personagens .personagem.selecionado{
+    box-shadow: 0px 0px 24px 5px #0271f7;
+}
+
+.lista-de-personagens2 .personagem.selecionado{
     box-shadow: 0px 0px 24px 5px #0271f7;
 }
 
