@@ -31,12 +31,29 @@ personagens.forEach((personagem) => {
         alterarDescricaoPersonagem(personagem);
 
     });
-    personagens.forEach((personagem) => {
-        personagem.addEventListener('click', () => {
-            trocarLista();
-        });
+    
+});
+
+const listaDePersonagens1 = document.querySelectorAll('lista-de-personagens');
+listaDePersonagens1.forEach(() => {
+    lista-de-personagens.addEventListener('click', () => {
+        trocarLista();
     });
 });
+
+const listaDePersonagens2 = document.querySelectorAll('lista-de-personagens2');
+listaDePersonagens2.forEach(() => {
+    lista-de-personagens2.addEventListener('click', () => {
+        retornarLista();
+    });
+});
+
+function retornarLista() {
+    const lista1 = document.getElementById("lista-de-personagens");
+    const lista2 = document.getElementById("lista-de-personagens2");
+    lista1.style.display = "flex";
+    lista2.style.display = "none";
+}
 
 function trocarLista() {
     const lista1 = document.getElementById("lista-de-personagens");
