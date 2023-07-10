@@ -32,7 +32,6 @@ body::before{
 }
 
 .selecao-de-personagens .lista-de-personagens{
-    
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
@@ -41,12 +40,11 @@ body::before{
 .selecao-de-personagens .lista-de-personagens button{
     background-color: black;
     color: white;
-    width: 25px;
-    height: 25px;
+    width: 150px;
+    height: 50px;
     box-shadow: 0px 0px 24px 5px #0271f7;
 }
 .selecao-de-personagens .lista-de-personagens2{
-    
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
@@ -55,8 +53,8 @@ body::before{
 .selecao-de-personagens .lista-de-personagens2 button{
     background-color: black;
     color: white;
-    width: 25px;
-    height: 25px;
+    width: 150px;
+    height: 50px;
     box-shadow: 0px 0px 24px 5px #0271f7;
 }
 

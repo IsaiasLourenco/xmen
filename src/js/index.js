@@ -16,8 +16,8 @@ const personagens = document.querySelectorAll('.personagem');
 personagens.forEach((personagem) => {
     personagem.addEventListener('mouseenter', () => {
 
-        if(window.innerWidth < 450){
-            window.scrollTo({top: 0, behavior: `smooth`});
+        if (window.innerWidth < 450) {
+            window.scrollTo({ top: 0, behavior: `smooth` });
         }
 
         removerSelecaoDoPersonagem();
@@ -31,8 +31,10 @@ personagens.forEach((personagem) => {
         alterarDescricaoPersonagem(personagem);
 
     });
-    personagem.addEventListener('click', () =>{
-        trocarLista();
+    personagens.forEach((personagem) => {
+        personagem.addEventListener('click', () => {
+            trocarLista();
+        });
     });
 });
 
