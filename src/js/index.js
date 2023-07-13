@@ -48,18 +48,55 @@ listaDePersonagens2.forEach(() => {
     });
 });
 
+const listaDePersonagens23 = document.querySelectorAll('lista-de-personagens2');
+listaDePersonagens23.forEach(() => {
+    lista-de-personagens23.addEventListener('click', () => {
+        proximaLista();
+    });
+});
+
+const listaDePersonagens3 = document.querySelectorAll('lista-de-personagens3');
+listaDePersonagens3.forEach(() => {
+    lista-de-personagens3.addEventListener('click', () => {
+        listaAnterior();
+    });
+    
+});
+
+function proximaLista() {
+    const lista1 = document.getElementById("lista-de-personagens");
+    const lista2 = document.getElementById("lista-de-personagens2");
+    const lista3 = document.getElementById("lista-de-personagens3");
+    lista1.style.display = "none";
+    lista2.style.display = "none";
+    lista3.style.display = "flex";
+}
+
+function listaAnterior() {
+    const lista1 = document.getElementById("lista-de-personagens");
+    const lista2 = document.getElementById("lista-de-personagens2");
+    const lista3 = document.getElementById("lista-de-personagens3");
+    lista1.style.display = "none";
+    lista2.style.display = "flex";
+    lista3.style.display = "none";
+}
+
 function retornarLista() {
     const lista1 = document.getElementById("lista-de-personagens");
     const lista2 = document.getElementById("lista-de-personagens2");
+    const lista3 = document.getElementById("lista-de-personagens3");
     lista1.style.display = "flex";
+    lista2.style.display = "none";
     lista2.style.display = "none";
 }
 
 function trocarLista() {
     const lista1 = document.getElementById("lista-de-personagens");
     const lista2 = document.getElementById("lista-de-personagens2");
+    const lista3 = document.getElementById("lista-de-personagens3");
     lista1.style.display = "none";
     lista2.style.display = "flex";
+    lista3.style.display = "none";
 }
 
 function alterarDescricaoPersonagem(personagem) {

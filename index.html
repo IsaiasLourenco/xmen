@@ -1,124 +1,348 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>X-Men - Future</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="shortcut icon" href="./src/imagens/ic.ico" type="image/x-icon">
-    
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/estilos.css">
-    <link rel="stylesheet" href="./src/css/responsivo.css">
-</head>
+    <link rel="shortcut icon" href="./src/imagens/ic.ico" type="image/x-icon" />
 
-<body>
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/estilos.css" />
+    <link rel="stylesheet" href="./src/css/responsivo.css" />
+  </head>
+
+  <body>
     <header class="cabecalho">
-        <img class="logo" src="./src/imagens/logo.svg" alt="">
+      <img class="logo" src="./src/imagens/logo.svg" alt="" />
     </header>
 
     <main class="selecao-de-personagens">
+      <section class="personagens">
+        <h1 class="titulo">Selecione um personagem</h1>
 
-        <section class="personagens">
+        <ul
+          id="lista-de-personagens"
+          class="lista-de-personagens"
+          style="display: flex"
+        >
+          <li
+            class="personagem selecionado"
+            id="ciclope"
+            data-name="Ciclope"
+            data-description="Ele tem o poder de disparar rajadas ópticas por causa de um acidente que aconteceu com ele quando criança, mas não consegue controlá-los."
+          >
+            <img
+              src="./src/imagens/card-ciclope.jpg"
+              alt="Personagem → Ciclope"
+            />
+          </li>
 
-            <h1 class="titulo"> Selecione um personagem </h1>
+          <li
+            class="personagem"
+            id="jean-grey"
+            data-name="Jean Grey"
+            data-description="É uma mutante nível ômega e o principal avatar da Força Fênix, no qual manifesta poderes cósmicos. A telepatia e telecinese estão entre seus poderes."
+          >
+            <img
+              src="./src/imagens/card-jean-grey.jpg"
+              alt="Personagem → Jean Grey"
+            />
+          </li>
 
-            <ul id="lista-de-personagens" class="lista-de-personagens" style="display: flex;">
+          <li
+            class="personagem"
+            id="lince-negra"
+            data-name="Lince Negra"
+            data-description="Ela tem o poder de atravessar matéria sólida,campos de energia,rajadas ópticas, continuando intacta,e também tem o poder de andar no ar."
+          >
+            <img
+              src="./src/imagens/card-lince-negra.jpg"
+              alt="Personagem → Lince Negra"
+            />
+          </li>
 
-                <li class="personagem selecionado" id="ciclope" data-name="Ciclope" data-description="Ele tem o poder de disparar rajadas ópticas por causa de um acidente que aconteceu com ele quando criança, mas não consegue controlá-los.">
-                    <img src="./src/imagens/card-ciclope.jpg" alt="Personagem → Ciclope">
-                </li>
+          <li
+            class="personagem"
+            id="magneto"
+            data-name="Magneto"
+            data-description="Ele tem o poder de magnetocinese, ou seja, controlar objetos de metal e criar campos magnéticos. Lidera os mutantes em uma tentativa de tomar o planeta."
+          >
+            <img
+              src="./src/imagens/card-magneto.jpg"
+              alt="Personagem → Magneto"
+            />
+          </li>
 
-                <li class="personagem" id="jean-grey" data-name="Jean Grey" data-description="É uma mutante nível ômega e o principal avatar da Força Fênix, no qual manifesta poderes cósmicos. A telepatia e telecinese estão entre seus poderes.">
-                    <img src="./src/imagens/card-jean-grey.jpg" alt="Personagem → Jean Grey">
-                </li>
+          <li
+            class="personagem"
+            id="noturno"
+            data-name="Noturno"
+            data-description="Como um mutante, Noturno possui agilidade sobre-humana, e a capacidade de teletransporte, invisibilidade em sombras profundas, e as mãos e os pés aderirem a parede."
+          >
+            <img
+              src="./src/imagens/card-noturno.jpg"
+              alt="Personagem → Noturno"
+            />
+          </li>
 
-                <li class="personagem" id="lince-negra" data-name="Lince Negra" data-description="Ela tem o poder de atravessar matéria sólida,campos de energia,rajadas ópticas, continuando intacta,e também tem o poder de andar no ar.">
-                    <img src="./src/imagens/card-lince-negra.jpg" alt="Personagem → Lince Negra">
-                </li>
+          <li
+            class="personagem"
+            id="tempestade"
+            data-name="Tempestade"
+            data-description="Tem o poder de controlar as forças da natureza, muito poderosa ela pode produzir raios, chuvas, gelos, ventos, neblina, entre outros efeitos."
+          >
+            <img
+              src="./src/imagens/card-tempestade.jpg"
+              alt="Personagem → Tempestade"
+            />
+          </li>
 
-                <li class="personagem" id="magneto" data-name="Magneto" data-description="Ele tem o poder de magnetocinese, ou seja, controlar objetos de metal e criar campos magnéticos. Lidera os mutantes em uma tentativa de tomar o planeta.">
-                    <img src="./src/imagens/card-magneto.jpg" alt="Personagem → Magneto">
-                </li>
+          <li
+            class="personagem"
+            id="vampira"
+            data-name="Vampira"
+            data-description="Ela tem o poder de absorver a vitalidade e memória das pessoas que toca ou no caso dos mutantes os poderes e a memória, mas só temporariamente."
+          >
+            <img
+              src="./src/imagens/card-vampira.jpg"
+              alt="Personagem → Vampira"
+            />
+          </li>
 
-                <li class="personagem" id="noturno" data-name="Noturno" data-description="Como um mutante, Noturno possui agilidade sobre-humana, e a capacidade de teletransporte, invisibilidade em sombras profundas, e as mãos e os pés aderirem a parede.">
-                    <img src="./src/imagens/card-noturno.jpg" alt="Personagem → Noturno">
-                </li>
+          <li
+            class="personagem"
+            id="wolverine"
+            data-name="Wolverine"
+            data-description="Entre vários outros poderes, esse mutante ranzinza e briguenhto tem garras metálicas, fator de cura regenerativo e super agilidade."
+          >
+            <img
+              src="./src/imagens/card-wolverine.jpg"
+              alt="Personagem → Wolverine"
+            />
+          </li>
 
-                <li class="personagem" id="tempestade" data-name="Tempestade" data-description="Tem o poder de controlar as forças da natureza, muito poderosa ela pode produzir raios, chuvas, gelos, ventos, neblina, entre outros efeitos.">
-                    <img src="./src/imagens/card-tempestade.jpg" alt="Personagem → Tempestade">
-                </li>
+          <button onclick="trocarLista()">→</button>
+        </ul>
 
-                <li class="personagem" id="vampira" data-name="Vampira" data-description="Ela tem o poder de absorver a vitalidade e memória das pessoas que toca ou no caso dos mutantes os poderes e a memória, mas só temporariamente.">
-                    <img src="./src/imagens/card-vampira.jpg" alt="Personagem → Vampira">
-                </li>
+        <ul
+          id="lista-de-personagens2"
+          class="lista-de-personagens2"
+          style="display: none"
+        >
+          <li
+            class="personagem"
+            id="xavier"
+            data-name="Professor Xavier"
+            data-description="Ele pode controlar, possuir, modificar e até apagar as mentes de outras pessoas, além de criar elos telepáticos com aliados, é o líder dos X-Men."
+          >
+            <img
+              src="./src/imagens/card-xavier.jpg"
+              alt="Personagem → Xavier"
+            />
+          </li>
 
-                <li class="personagem" id="wolverine" data-name="Wolverine" data-description="Entre vários outros poderes, esse mutante ranzinza e briguenhto tem garras metálicas, fator de cura regenerativo e super agilidade.">
-                    <img src="./src/imagens/card-wolverine.jpg" alt="Personagem → Wolverine">
-                </li>
-                
-                <button onclick="trocarLista()">→</button>
+          <li
+            class="personagem"
+            id="fera"
+            data-name="Fera"
+            data-description="Em sua adolescência e antes de sofrer a mutação que o deixaria com a forma de gorila, Hank era capaz de erguer objetos com até uma tonelada de peso. Após a transformação."
+          >
+            <img src="./src/imagens/card-fera.jpg"Personagem → Fera">
+          </li>
 
-            </ul>
+          <li
+            class="personagem"
+            id="mistica"
+            data-name="Mística"
+            data-description="Seu nome verdadeiro é Raven Darkhölme e ela possui o poder de transmutação, a capacidade de mudar psiquicamente a formação de suas células biológicas para mudar sua aparência."
+          >
+            <img
+              src="./src/imagens/card-mistica.jpg"
+              alt="Personagem → Mística"
+            />
+          </li>
 
-            <ul id="lista-de-personagens2" class="lista-de-personagens2" style="display: none;">
+          <li
+            class="personagem"
+            id="colossos"
+            data-name="Colossos"
+            data-description="Entre dseus poderes, temos a transmutação em Aço Orgânico, super-força, resistência sobre-humana, , resistência sobre-humana."
+          >
+            <img
+              src="./src/imagens/card-colossos.jpg"
+              alt="Personagem → Colossos"
+            />
+          </li>
 
-                <li class="personagem" id="xavier" data-name="Professor Xavier" data-description="Ele pode controlar, possuir, modificar e até apagar as mentes de outras pessoas, além de criar elos telepáticos com aliados, é o líder dos X-Men.">
-                    <img src="./src/imagens/card-xavier.jpg" alt="Personagem → Xavier">
-                </li>
+          <li
+            class="personagem"
+            id="dead-pool"
+            data-name="Dead Pool"
+            data-description="Deadpool é muito mais do que apenas um personagem com regeneração e cura acelerada com regeneração e cura acelerada e cura acelerada."
+          >
+            <img
+              src="./src/imagens/card-dead-pool.jpg"
+              alt="Personagem → Dead Pool"
+            />
+          </li>
 
-                <li class="personagem" id="fera" data-name="Fera" data-description="Em sua adolescência e antes de sofrer a mutação que o deixaria com a forma de gorila, Hank era capaz de erguer objetos com até uma tonelada de peso. Após a transformação.">
-                    <img src="./src/imagens/card-fera.jpg"Personagem → Fera">
-                </li>
+          <li
+            class="personagem"
+            id="jubileu"
+            data-name="Jubileu"
+            data-description="Possui a habilidade de projetar e controlar energia plasmática e rajadas luminosas e controlar energia plasmática e rajadas luminosas."
+          >
+            <img
+              src="./src/imagens/card-jubileu.jpg"
+              alt="Personagem → Jubileu"
+            />
+          </li>
+          <li
+            class="personagem"
+            id="gambit"
+            data-name="Gambit"
+            data-description="Um mutante de nivel beta sendo um mutante muito poderoso, Gambit possui a habilidade de manipular energia cinética, Gambit possui a habilidade de manipular energia cinética."
+          >
+            <img
+              src="./src/imagens/card-gambit.jpg"
+              alt="Personagem → Gambit"
+            />
+          </li>
 
-                <li class="personagem" id="mistica" data-name="Mística" data-description="Seu nome verdadeiro é Raven Darkhölme e ela possui o poder de transmutação, a capacidade de mudar psiquicamente a formação de suas células biológicas para mudar sua aparência.">
-                    <img src="./src/imagens/card-mistica.jpg" alt="Personagem → Mística">
-                </li>
+          <li
+            class="personagem"
+            id="dente-de-sabre"
+            data-name="Dente de Sabre"
+            data-description="Assim como sua contra-parte, Wolverine, ele tem ossos e garras com adamantium, bem como um fator de cura extremamente acelerado, bem como um fator de cura extremamente acelerado."
+          >
+            <img
+              src="./src/imagens/card-dente-de-sabre.jpg"
+              alt="Personagem → Dente de Sabre"
+            />
+          </li>
 
-                <li class="personagem" id="colossos" data-name="Colossos" data-description="Entre dseus poderes, temos a transmutação em Aço Orgânico, super-força, resistência sobre-humana, , resistência sobre-humana.">
-                    <img src="./src/imagens/card-colossos.jpg" alt="Personagem → Colossos">
-                </li>
+          <button onclick="retornarLista()">←</button>
+          <button onclick="proximaLista()">→</button>
+        </ul>
 
-                <li class="personagem" id="dead-pool" data-name="Dead Pool" data-description="Deadpool é muito mais do que apenas um personagem com regeneração e cura acelerada com regeneração e cura acelerada e cura acelerada.">
-                    <img src="./src/imagens/card-dead-pool.jpg" alt="Personagem → Dead Pool">
-                </li>
+        <ul
+          id="lista-de-personagens3"
+          class="lista-de-personagens3"
+          style="display: none"
+        >
+          <li
+            class="personagem"
+            id="feiticeira"
+            data-name="Feiticeira Escarlate"
+            data-description="Wanda pode manipular a magia conhecida como magia do Caos, uma magia negra, o que permite alterar a realidade e controlar formas de energia mística."
+          >
+            <img
+              src="./src/imagens/card-feiticeira.jpg"
+              alt="Personagem → Feiticeira Escarlate"
+            />
+          </li>
 
-                <li class="personagem" id="jubileu" data-name="Jubileu" data-description="Possui a habilidade de projetar e controlar energia plasmática e rajadas luminosas e controlar energia plasmática e rajadas luminosas.">
-                    <img src="./src/imagens/card-jubileu.jpg" alt="Personagem → Jubileu">
-                </li>
-                <li class="personagem" id="gambit" data-name="Gambit" data-description="Um mutante de nivel beta sendo um mutante muito poderoso, Gambit possui a habilidade de manipular energia cinética, Gambit possui a habilidade de manipular energia cinética.">
-                    <img src="./src/imagens/card-gambit.jpg" alt="Personagem → Gambit">
-                </li>
+          <li
+            class="personagem"
+            id="namor"
+            data-name="Namor"
+            data-description="Entre seus poderesm,  o Príncipe Submarino pode voar, além de demonstrar superforça, habilidades aquáticas, entre outros poderes sobre-humanos."
+          >
+            <img src="./src/imagens/card-namor.jpg" alt="Personagem → Namor">
+          </li>
 
-                <li class="personagem" id="dente-de-sabre" data-name="Dente-de-sabre" data-description="Assim como sua contra-parte, Wolverine, ele tem ossos e garras com adamantium, bem como um fator de cura extremamente acelerado, bem como um fator de cura extremamente acelerado.">
-                    <img src="./src/imagens/card-dente-de-sabre.jpg" alt="Personagem → Dente-de-sabre">
-                </li>
+          <li
+            class="personagem"
+            id="kamala"
+            data-name="Ms. Marvel"
+            data-description="Nos quadrinhos, a jovem é uma Inumana e conquista seus poderes - que incluem a capacidade de esticar os membros do seu corpo, aumentar ou diminuir de tamanho e mudar de aparência - após entrar em contato com a Névoa Terrígena."
+          >
+            <img
+              src="./src/imagens/card-kamala.jpg"
+              alt="Personagem → Ms. Marvel"
+            />
+          </li>
 
-                <button onclick="retornarLista()">←</button>
+          <li class="personagem" id="mercurio" data-name="Mercúrio"
+          data-description="Pietro Maximoff, irmão de Wanda, suporta aproximadamente 500 quilos, enquanto sua pernas podem suportar cerca de 1 tonelada em condições ideais, alcançando a velociade da luz.">
+          <img src="./src/imagens/card-mercurio.jpg" alt="Personagem → Mercúrio">
+      </li>
 
-            </ul>
+          <li
+            class="personagem"
+            id="anjo"
+            data-name="Anjo"
+            data-description="Suas asas não são o seu único poder mutante. Seus olhos suportam ventos de altas velocidades e seus pulmões extraordinários permitem a ele a capacidade de respirar normalmente a grandes altitudes."
+          >
+            <img
+              src="./src/imagens/card-anjo.jpg"
+              alt="Personagem → Anjo"
+            />
+          </li>
 
-        </section>
+          <li
+            class="personagem"
+            id="psy-lock"
+            data-name="Psylocke"
+            data-description="Elizabeth Betsy Braddock, uma mutante que é militar, tem o poder da telepatia, telecinese, controle da mente além da Habilidade de criar armas psíquicas."
+          >
+            <img
+              src="./src/imagens/card-psy-lock.jpg"
+              alt="Personagem → Psylocke"
+            />
+          </li>
+          <li
+            class="personagem"
+            id="maniaco"
+            data-name="Maníaco"
+            data-description="Suas habilidades incluem superforça, invulnerabilidade, alta durabilidade e também a capacidade de não ser parado caso comece a se movimentar. Cain também usa um capacete especial para se proteger de ataques psíquicos, controle mental e ataques."
+          >
+            <img
+              src="./src/imagens/card-maniaco.jpg"
+              alt="Personagem → Maníaco"
+            />
+          </li>
 
-        <section class="personagem-selecionado">
+          <li
+            class="personagem"
+            id="apocalipse"
+            data-name="Apocalipse"
+            data-description="Controla as moléculas do seu próprio corpo, lhe permitindo alterar sua aparência e poderes. Suas habilidades incluem se teletransportar e teletransportar outras pessoas, por meio de portais ou por desmaterialização."
+          >
+            <img
+              src="./src/imagens/card-apocalipse.jpg"
+              alt="Personagem → Apocalipse"
+            />
+          </li>
 
-            <img class="personagem-grande" src="./src/imagens/card-ciclope.png" alt="Personagem Selecionado">
+          <button onclick="listaAnterior()">←</button>
+        </ul>
+      </section>
 
-            <div class="informacoes-personagem">
-                <h2 class="nome-personagem" id="nome-personagem">Ciclope</h2>
-                <p class="descricao-personagem" id="descricao-personagem">Ele tem o poder de disparar rajadas ópticas por causa de um acidente que aconteceu com ele quando criança, mas não consegue controlá-los.</p>
-            </div>
+      <section class="personagem-selecionado">
+        <img
+          class="personagem-grande"
+          src="./src/imagens/card-ciclope.png"
+          alt="Personagem Selecionado"
+        />
 
-        </section>
-
+        <div class="informacoes-personagem">
+          <h2 class="nome-personagem" id="nome-personagem">Ciclope</h2>
+          <p class="descricao-personagem" id="descricao-personagem">
+            Ele tem o poder de disparar rajadas ópticas por causa de um acidente
+            que aconteceu com ele quando criança, mas não consegue controlá-los.
+          </p>
+        </div>
+      </section>
     </main>
 
     <script src="./src/js/index.js"></script>
-
-</body>
-
+  </body>
 </html>
