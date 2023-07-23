@@ -16,6 +16,10 @@ const personagens = document.querySelectorAll('.personagem');
 personagens.forEach((personagem) => {
     personagem.addEventListener('mouseenter', () => {
 
+        const lista1 = document.getElementById("lista-de-personagens");
+        const lista2 = document.getElementById("lista-de-personagens2");
+        const lista3 = document.getElementById("lista-de-personagens3");
+
         if (window.innerWidth < 450) {
             window.scrollTo({ top: 0, behavior: `smooth` });
         }
@@ -64,36 +68,28 @@ listaDePersonagens3.forEach(() => {
 });
 
 function proximaLista() {
-    const lista1 = document.getElementById("lista-de-personagens");
-    const lista2 = document.getElementById("lista-de-personagens2");
-    const lista3 = document.getElementById("lista-de-personagens3");
+
     lista1.style.display = "none";
     lista2.style.display = "none";
     lista3.style.display = "flex";
 }
 
 function listaAnterior() {
-    const lista1 = document.getElementById("lista-de-personagens");
-    const lista2 = document.getElementById("lista-de-personagens2");
-    const lista3 = document.getElementById("lista-de-personagens3");
+
     lista1.style.display = "none";
     lista2.style.display = "flex";
     lista3.style.display = "none";
 }
 
 function retornarLista() {
-    const lista1 = document.getElementById("lista-de-personagens");
-    const lista2 = document.getElementById("lista-de-personagens2");
-    const lista3 = document.getElementById("lista-de-personagens3");
+
     lista1.style.display = "flex";
     lista2.style.display = "none";
     lista2.style.display = "none";
 }
 
 function trocarLista() {
-    const lista1 = document.getElementById("lista-de-personagens");
-    const lista2 = document.getElementById("lista-de-personagens2");
-    const lista3 = document.getElementById("lista-de-personagens3");
+
     lista1.style.display = "none";
     lista2.style.display = "flex";
     lista3.style.display = "none";
